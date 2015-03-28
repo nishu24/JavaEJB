@@ -5,8 +5,10 @@
  */
 package com.javaProject.servlet;
 
+import com.javaProject.stateless.SessionEJBean;
 import java.io.IOException;
 import java.io.PrintWriter;
+import javax.ejb.EJB;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -19,6 +21,8 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet(name = "EJBFormServlet", urlPatterns = {"/EJBFormServlet"})
 public class EJBFormServlet extends HttpServlet {
+    @EJB
+    private SessionEJBean sessionEJBean;
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
