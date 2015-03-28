@@ -36,15 +36,22 @@ public class EJBFormServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        int number1 = Integer.parseInt(request.getParameter("number1"));
+        int number2 = Integer.parseInt(request.getParameter("number2"));
+        
         try (PrintWriter out = response.getWriter()) {
             /* TODO output your page here. You may use following sample code. */
             out.println("<!DOCTYPE html>");
             out.println("<html>");
             out.println("<head>");
-            out.println("<title>Servlet EJBFormServlet</title>");            
+            out.println("<title>CalculatorFormServlet</title>");
             out.println("</head>");
             out.println("<body>");
-            out.println("<h1>Servlet EJBFormServlet at " + request.getContextPath() + "</h1>");
+            out.println("<h3>Addition of number1 and number2 is -" + sessionEJBean.add(number1, number2) +"</h3>");
+            out.println("<h3>Subtraction of number1 and number2 is -" + sessionEJBean.subtract(number1, number2) +"</h3>");
+            out.println("<h3>Division of number1 and number2 is -" + sessionEJBean.division(number1, number2) +"</h3>");
+            out.println("<h3>Multiplication of number1 and number2 is -" + sessionEJBean.multiply(number1, number2) +"</h3>");
+            out.println("Click <a href='index.html'>here</a> to go back");
             out.println("</body>");
             out.println("</html>");
         }
