@@ -6,26 +6,37 @@ and open the template in the editor.
 -->
 <html>
     <head>
-        <title>TODO supply a title</title>
+        <title>Java EJB</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+        <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+        <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
     </head>
     <body>
         <form method="POST"  action="EJBFormServlet">
-            <table>
-                <tr>
-                    <td>Enter Value of number 1:</td>
-                    <td><input type="text" name="number1" id="number1" /></td>
-                </tr>
-                <tr>
-                    <td>Enter Value of number 2:</td>
-                    <td><input type="text" name="number2" id="number2" /></td>
-                </tr>
-                <tr>
-                    <td><input type="submit" value="submit" /></td>
-                    
-                </tr>
-            </table>
+            <div data-role="main" class="ui-content">
+                <div data-role="collapsible">
+                    <h1>Click me - I'm collapsible!</h1>
+                    <p>I'm the expanded content.</p>
+                    <table>
+                        <tr>
+                            <td>Enter Value of number 1:</td>
+                            <td><input type="text" name="number1" id="number1" /></td>
+                        </tr>
+                        <tr>
+                            <td>Enter Value of number 2:</td>
+                            <td><input type="text" name="number2" id="number2" /></td>
+                        </tr>
+                        <tr>
+                            <td><input type="submit" value="submit" /></td>
+
+                        </tr>
+                    </table>
+                </div>
+            </div>
+
         </form>
     </body>
 </html>
