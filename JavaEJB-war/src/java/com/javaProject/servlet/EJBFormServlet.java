@@ -46,14 +46,28 @@ public class EJBFormServlet extends HttpServlet {
             out.println("<html>");
             out.println("<head>");
             out.println("<title>CalculatorFormServlet</title>");
+            out.println("<meta name=\"viewport\" content=\"width=device-width, initial-scale=1\"> ");
+            out.println("<link rel=\"stylesheet\" href=\"http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css\">");
+            out.println("<script src=\"http://code.jquery.com/jquery-1.11.2.min.js\"></script>");
+            out.println("<script src=\"http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js\"></script>");
             out.println("</head>");
             out.println("<body>");
+            out.println("<div data-role=\"panel\" id=\"myPanel\"> ");
+            out.println("    <h2>Panel Header</h2>");
+            out.println("<p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>");
+            
             out.println("<h3>Addition of number1 and number2 is " + sessionEJBean.add(number1, number2) + "</h3>");
             out.println("<h3>Subtraction of number1 and number2 is " + sessionEJBean.subtract(number1, number2) + "</h3>");
             out.println("<h3>Division of number1 and number2 is " + sessionEJBean.division(number1, number2) + "</h3>");
             out.println("<h3>Multiplication of number1 and number2 is " + sessionEJBean.multiply(number1, number2) + "</h3>");
             out.println("<h3>Your converted $ is --> " + sessionEJBean.conversion(number1) + " rupees</h3>");            
             out.println("Click <a href='index.html'>here</a> to go back");
+            out.println("</div> ");
+            out.println("  <div data-role=\"main\" class=\"ui-content\"> ");
+            out.println("  <p>Click on the button below to open the Panel.</p>");
+            out.println("<a href=\"#myPanel\" class=\"ui-btn ui-btn-inline ui-corner-all ui-shadow\">Open Panel</a>");
+            out.println("</div>");
+            
             out.println("</body>");
             out.println("</html>");
         }
