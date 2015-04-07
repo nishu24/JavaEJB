@@ -33,6 +33,7 @@ public class SessionEJBean {
     public int division(int number1, int number2) {
         return number1 / number2;
     }
+
     public int conversion(int number1) {
         number1 = number1 * 49;
         return number1;

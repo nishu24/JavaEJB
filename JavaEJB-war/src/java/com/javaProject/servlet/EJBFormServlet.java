@@ -55,19 +55,17 @@ public class EJBFormServlet extends HttpServlet {
             out.println("<div data-role=\"panel\" id=\"myPanel\"> ");
             out.println("    <h2>Panel Header</h2>");
             out.println("<p>You can close the panel by clicking outside the panel, pressing the Esc key or by swiping.</p>");
-            
             out.println("<h3>Addition of number1 and number2 is " + sessionEJBean.add(number1, number2) + "</h3>");
             out.println("<h3>Subtraction of number1 and number2 is " + sessionEJBean.subtract(number1, number2) + "</h3>");
             out.println("<h3>Division of number1 and number2 is " + sessionEJBean.division(number1, number2) + "</h3>");
             out.println("<h3>Multiplication of number1 and number2 is " + sessionEJBean.multiply(number1, number2) + "</h3>");
-            out.println("<h3>Your converted $ is --> " + sessionEJBean.conversion(number1) + " rupees</h3>");            
+            out.println("<h3>Your converted $ is --> " + sessionEJBean.conversion(number1) + " rupees</h3>");
             out.println("Click <a href='index.html'>here</a> to go back");
             out.println("</div> ");
             out.println("  <div data-role=\"main\" class=\"ui-content\"> ");
             out.println("  <p>Click on the button below to open the Panel.</p>");
             out.println("<a href=\"#myPanel\" class=\"ui-btn ui-btn-inline ui-corner-all ui-shadow\">Open Panel</a>");
             out.println("</div>");
-            
             out.println("</body>");
             out.println("</html>");
         }
