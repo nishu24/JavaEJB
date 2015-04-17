@@ -13,6 +13,12 @@ and open the template in the editor.
         <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
         <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
         <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+        <style>
+            form{
+                
+                background-color: #FFCC66;
+            }
+        </style>
     </head>
     <body>
         <form method="POST"  action="EJBFormServlet">
@@ -30,12 +36,17 @@ and open the template in the editor.
                             <td><input type="text" name="number2" id="number2" /></td>
                         </tr>
                         <tr>
+                            <td>Amount to Convert to Indian Rupees</td>
+                            <td><input type="text" name="number3" id="number2" /></td>
+                        </tr>
+                        <tr>
                             <td><input type="submit" value="submit" /></td>
                         </tr>
                     </table>
                 </div>
                 <div data-role="collapsible">
-                    <a href="jsp/CRUD.jsp">Click Here for CRUD facilities</a>
+                    <h1>Click Here for CRUD Operations</h1>
+<!--                    <a href="jsp/CRUD.jsp" style="text-align:center;">Click Here for CRUD facilities</a>-->
                 </div>
             </div>          
         </form>
