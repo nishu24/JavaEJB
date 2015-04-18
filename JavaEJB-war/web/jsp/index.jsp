@@ -9,21 +9,25 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Login Page</title>
+        <style>
+            body{
+                background-color: #FFCC66;
+            }
+        </style>
     </head>
     <body>
         <form action="checklogin.jsp" method=post>
-            <div style=" height: 298px; background-color: #dfeffc; border: 1px double #00a1d2">
-                <h1 class="shadow">Lambton College Student Login</h1>
+            <div style=" height: 298px; background-color: #dfeffc; border: 3px double black; font-size: large; font-weight: bold;">                
                 <fieldset>
-                    <legend for="username">Student Details </legend>
+                    <legend for="username">Login Details</legend>
                     <label>Enter Username</label>
-                    <input  type="text" name="username" id="txtUserName" placeholder="Enter Username"  required /><br>
+                    <input  type="text" name="username" id="txtUserName" placeholder="Enter Username"  required /><br><br>
                     <label for="password">Enter Password</label>
                     <input  type="password" name="password" id="txtPassword" placeholder="Enter password" value="" class="shadow" required /><br><br>
-                    <input  type="submit" value="Login" id="center" class="shadow"  /><br>
+                    <input  style="margin-left: 9.5em; width: 12%;" type="submit" value="Login" id="center" class="shadow" /><br><br>
                     <label id="nu">New User?</label> 
-                    <a href="CRUD.jsp"><input value="Register" type="button" id="nub" class="shadow"></a>
+                    <a href="CRUD.jsp"><input value="Register" style="margin-left: 3em; width: 12%;" type="button" id="nub" class="shadow"></a>
                     <p class="login-help" align="center"><a href="index.html">Forget password?</a></p>
                 </fieldset>
             </div>
