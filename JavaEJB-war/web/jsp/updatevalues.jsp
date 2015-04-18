@@ -1,6 +1,6 @@
 <%-- 
     Document   : updatevalues
-    Created on : Nov 30, 2014, 7:48:41 PM
+    Created on : April 16, 2015, 7:48:41 PM
     Author     : Nisarg
 --%>
 <%@page import="com.java.Static"%>
@@ -36,7 +36,6 @@
                     <td><label>First Name</label></td>
                     <td><input type=text name="fname" id="textname" size="35" value=<%=Static.user.getFisrtName()%> required></td>
                 </tr>
-
                 <tr>
                     <td><label>Last Name</label></td>
                     <td><input type="text" name="lname" id="fathername" value=<%=Static.user.getLastName()%>
@@ -48,7 +47,6 @@
                 </tr>               
                 <tr>
                     <td><label>Sex</label></td>
-
                     <td>
                         <input type="radio" name="sex" value="m" <% if (Static.user.getSex().equals("m")) {
                                 out.print("checked");
@@ -57,7 +55,6 @@
                                 out.print("checked");
                             }%> >>Female</td>
                 </tr>
-
                 <tr>
                     <td><label>City</label></td>
                     <td><input type="text" name="city" id="city" size="35" value=<%=Static.user.getCity()%> required></td>                  
@@ -69,7 +66,6 @@
                 <tr>
                     <td><label>PinCode</label></td>
                     <td><input type="text" name="pincode" id="pincode" value=<%=Static.user.getZip()%> size="35"></td>
-
                 </tr>
                 <tr>
                     <td><label>EmailId</label></td>

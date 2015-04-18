@@ -14,14 +14,12 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
 /**
  *
  * @author Nisarg
  */
 @WebServlet(name = "EJBFormServlet", urlPatterns = {"/EJBFormServlet"})
 public class EJBFormServlet extends HttpServlet {
-
     @EJB
     private SessionEJBean sessionEJBean;
 

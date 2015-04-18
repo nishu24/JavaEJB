@@ -3,8 +3,6 @@
     Created on : April 22, 2015, 7:54:36 PM
     Author     : Nisarg
 --%>
-
-
 <%@page import="com.java.Static"%>
 <%@page import="com.java.User"%>
 <%@page import="java.sql.ResultSet"%>
@@ -15,7 +13,6 @@
 <%@page import="java.util.Map"%>
 <%@page import="java.util.Enumeration"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-
 <html>
     <head>
         <style>
@@ -102,8 +99,7 @@
         %>
     <marquee><h1>Hello User: <%= Static.user.getUserName()%> </h1> </marquee>
     <h2><a href="../index.html">Perform Some Calculations</a></h2>
-    <a href="index.jsp"><img src="../Capture.JPG"  height="40" width="125"/></a>
-
+    <a href="index.jsp"><img src="../images/Capture.JPG"  height="40" width="125"/></a>
     <%
     } else {
     %><h1>Please check password</h1> <%

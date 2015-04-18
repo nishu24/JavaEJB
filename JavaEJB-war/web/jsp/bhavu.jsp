@@ -51,7 +51,7 @@
                         <input id="img" type="submit" name="delete" value="Delete Data"/><span id="side"></span>
                     </form>
                 </li>
-                        <li><a href="index.jsp"><img src="../Capture.JPG"  height="50" width="145"/></a></li>
+                        <li><a href="index.jsp"><img src="../images/Capture.JPG"  height="50" width="145"/></a></li>
             </ul>
         </div>        
     </body>

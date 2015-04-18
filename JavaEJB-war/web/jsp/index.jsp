@@ -17,11 +17,11 @@
             h2{
                 text-align: center;
                 text-shadow: 1.5px 1.5px #FFCC99;
-                background-image: url("../canvas.jpg");                
+                background-image: url("../images/canvas.jpg");                
                 border: 3px double black;
             }
             div{
-                background-image: url("../canvas.jpg");                
+                background-image: url("../images/canvas.jpg");                
             }
         </style>
     </head>
