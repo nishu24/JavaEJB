@@ -18,7 +18,7 @@
     </head>
     <body>
         <form action="checklogin.jsp" method=post>
-            <div style=" height: 298px; background-color: #dfeffc; border: 3px double black; font-size: large; font-weight: bold;">                
+            <div style=" height: 298px; background-color: #dfeffc; border: 3px double black; font-size: large; font-weight: bold;">                                
                 <fieldset>
                     <legend for="username">Login Details</legend>
                     <label>Enter Username</label>
@@ -28,7 +28,7 @@
                     <input  style="margin-left: 9.5em; width: 12%;" type="submit" value="Login" id="center" class="shadow" /><br><br>
                     <label id="nu">New User?</label> 
                     <a href="CRUD.jsp"><input value="Register" style="margin-left: 3em; width: 12%;" type="button" id="nub" class="shadow"></a>
-                    <p class="login-help" align="center"><a href="index.html">Forget password?</a></p>
+                    <p class="login-help" align="center"><a href="index.jsp">Forget password?</a></p>
                 </fieldset>
             </div>
         </form>
