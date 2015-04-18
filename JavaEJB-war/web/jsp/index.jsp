@@ -14,10 +14,20 @@
             body{
                 background-color: #FFCC66;
             }
+            h2{
+                text-align: center;
+                text-shadow: 1.5px 1.5px #FFCC99;
+                background-image: url("../canvas.jpg");                
+                border: 3px double black;
+            }
+            div{
+                background-image: url("../canvas.jpg");                
+            }
         </style>
     </head>
     <body>
         <form action="checklogin.jsp" method=post>
+            <h2>Welcome To CPD-4414 Java Project</h2>
             <div style=" height: 298px; background-color: #dfeffc; border: 3px double black; font-size: large; font-weight: bold;">                                
                 <fieldset>
                     <legend for="username">Login Details</legend>

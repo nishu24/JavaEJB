@@ -20,23 +20,26 @@
     <head>
         <style>
             h2 {
-                background: #ddd;
+                background: #FF9933;
                 font-family: cursive;
-                font-size: 210%;
+                font-size: 120%;
                 text-align: center;
                 border-radius: 1em;
+                width:30%;
+                
             }
             h1 {
-                background: #ddd;
+                background: #FF9933;
                 text-align: center;
                 border-radius: 1em;
-                font-family: cursive;              
+                font-family: cursive;
+                width:30%;
             }
         </style>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <title>Checking Login</title>
     </head>
-    <body bgcolor="#FF6666">
+    <body bgcolor="#FFFFCC">
         <%
 
             Map<String, String[]> params = request.getParameterMap();
@@ -97,10 +100,9 @@
 
                         Static.user = user;
         %>
-    <marquee><img src="images/images.jpg"></marquee>
-    <h1>Hi Student,</h1> 
+    <marquee><h1>Hello User: <%= Static.user.getUserName()%> </h1> </marquee>
     <h2><a href="../index.html">Perform Some Calculations</a></h2>
-<!--    <h2>For more Actions, Click here&nbsp;&nbsp;&nbsp;<a href="bhavu.jsp"><img src="images/index.jpg" height="50"></a></h2>-->
+    <a href="index.jsp"><img src="../Capture.JPG"  height="40" width="125"/></a>
 
     <%
     } else {
@@ -110,7 +112,6 @@
         if (count == 0) {
     %><h1>Please check user name</h1> <%
         }
-
     } catch (Exception e) {
     %><h1>Something went wrong</h1><%
         }
@@ -118,16 +119,12 @@
             if (psSelectRecord != null) {
                 psSelectRecord.close();
             }
-
             if (conn != null) {
                 conn.close();
             }
         } catch (Exception e) {
             e.printStackTrace();
         }
-    %>
-
-    <!--        <a href="bhavu.html"><input type="button" class="shadow" value="View Data"></a><br>-->
-
+    %>   
 </body>
 </html>

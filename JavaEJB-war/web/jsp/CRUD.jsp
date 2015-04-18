@@ -17,7 +17,7 @@ and open the template in the editor.
 <html>
     <head>
         <style>
-            #text{
+            #harsh{
                 text-shadow: 2px 2px #719dab;
                 font-family: cursive;
             }
@@ -34,20 +34,11 @@ and open the template in the editor.
                 margin-left: 5em;
                 font-family:cursive;
             }
-            table {
-                box-shadow: 4px 2px 2px 4px #719dab;
-
+            table {                
+                border: #FF9933 outset thick;
             }
         </style>
-        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-        <script>
-            $(function() {
-            $("#dob").datepicker({
-            inline: true
-            });
-            }
-        </script>
-
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>        
         <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,600,700,900" rel="stylesheet" />
         <script type="text/javascript" src="validate.js"></script>
         <title>Adding Details</title>
@@ -55,18 +46,15 @@ and open the template in the editor.
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-
         <form action="Register.jsp" method=post>
-            <h1 id="text" align="center">Lambton College</h1>
-            <h1 id="text" align="center">Student Data Filling</h1>
-
+            <h1 id="harsh" align="center"></h1>
+            <h1 id="harsh" align="center">Register Yourself</h1>
             <label align="right"></label>
-            <table cellpadding="2" width="90%" bgcolor="#F6CECE" align="center"
-                   cellspacing="2">
-
+            <table cellpadding="2" width="90%" bgcolor="#FFCC66" align="center"
+                   cellspacing="2" border="0">
                 <tr>
                     <td colspan=2>
-                <center><b id="text1"><label>Add Your Details</label></b></center>
+                <center><b id="text1"><label>Add Details</label></b></center>
                 </td>
                 </tr>
                 <tr>
@@ -77,7 +65,6 @@ and open the template in the editor.
                     <td><label>First Name</label></td>
                     <td><input type=text name="fname" id="textname1" size="35" required></td>
                 </tr>
-
                 <tr>
                     <td><label>Last Name</label></td>
                     <td><input type="text" name="lname" id="fathername"
@@ -92,7 +79,6 @@ and open the template in the editor.
                     <td><input type="radio" name="sex" value="m" >Male
                         <input type="radio" name="sex" value="f" >Female</td>
                 </tr>
-
                 <tr>
                     <td><label>City</label></td>
                     <td><input type="text" name="city" id="city" size="35" required></td>                  
@@ -104,7 +90,6 @@ and open the template in the editor.
                 <tr>
                     <td><label>PinCode</label></td>
                     <td><input type="text" name="zip" id="pincode" size="35"></td>
-
                 </tr>
                 <tr>
                     <td><label>EmailId</label></td>
@@ -116,7 +101,7 @@ and open the template in the editor.
                 </tr>
                 <tr>
                     <td></td>
-                    <td colspan="2"><input  type="submit" value="Submit Form" /><input type="reset"></td>
+                    <td colspan="2"><input  type="submit" value="Submit Form" /><input type="reset" /></td>
                 </tr>
             </table>
         </form>
