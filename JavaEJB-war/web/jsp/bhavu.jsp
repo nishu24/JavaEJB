@@ -47,7 +47,7 @@
                 </li>
                 <li>
                     <form action="delete.jsp" method="post">
-<!--                        <input type="text" name ="username" value=<%= Static.user.getUserName()%> />-->
+                       <input type="text" name ="username" value=<%= Static.user.getUserName()%> />
                         <input id="img" type="submit" name="delete" value="Delete Data"/><span id="side"></span>
                     </form>
                 </li>
