@@ -22,8 +22,7 @@
                 font-size: 120%;
                 text-align: center;
                 border-radius: 1em;
-                width:30%;
-                
+                width:30%;                
             }
             h1 {
                 background: #FF9933;
